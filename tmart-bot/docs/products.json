@@ -1,0 +1,122 @@
+{
+  "settings": {
+    "shop_name": "T-MART",
+    "currency": "so'm",
+    "delivery_fee": 15000,
+    "free_delivery_from": 200000,
+    "min_order": 30000,
+    "pickup_address": "Toshkent sh., do'kon manzilini shu yerga yozing"
+  },
+  "products": [
+    {
+      "id": "shin-ramyun",
+      "name": "Shin Ramyun",
+      "category": "korea",
+      "price": 16000,
+      "image": "",
+      "description": "Mol go'shti ta'mli achchiq klassik ramyon, 120 g",
+      "spicy": 2,
+      "available": true
+    },
+    {
+      "id": "buldak-original",
+      "name": "Buldak Hot Chicken",
+      "category": "korea",
+      "price": 22000,
+      "image": "",
+      "description": "Juda achchiq tovuqli quruq ramyon, 140 g",
+      "spicy": 3,
+      "available": true
+    },
+    {
+      "id": "buldak-carbonara",
+      "name": "Buldak Carbonara",
+      "category": "korea",
+      "price": 24000,
+      "image": "",
+      "description": "Qaymoqli, achchiq tovuqli ramyon, 130 g",
+      "spicy": 2,
+      "available": true
+    },
+    {
+      "id": "jin-ramen",
+      "name": "Jin Ramen (yumshoq)",
+      "category": "korea",
+      "price": 14000,
+      "image": "",
+      "description": "Yengil achchiq, bolalarga ham mos, 120 g",
+      "spicy": 1,
+      "available": true
+    },
+    {
+      "id": "chapagetti",
+      "name": "Chapagetti",
+      "category": "korea",
+      "price": 18000,
+      "image": "",
+      "description": "Qora loviya sousli quruq ramyon, 140 g",
+      "spicy": 0,
+      "available": true
+    },
+    {
+      "id": "neoguri",
+      "name": "Neoguri",
+      "category": "korea",
+      "price": 17000,
+      "image": "",
+      "description": "Dengiz mahsulotlari ta'mli yo'g'on udon, 120 g",
+      "spicy": 2,
+      "available": true
+    },
+    {
+      "id": "master-kong-beef",
+      "name": "Master Kong mol go'shtli",
+      "category": "china",
+      "price": 15000,
+      "image": "",
+      "description": "Qovurilgan mol go'shti ta'mli lapsha, 105 g",
+      "spicy": 1,
+      "available": true
+    },
+    {
+      "id": "suanlafen",
+      "name": "Suanlafen (nordon-achchiq)",
+      "category": "china",
+      "price": 25000,
+      "image": "",
+      "description": "Kraxmal lapsha, nordon va achchiq sho'rva, 130 g",
+      "spicy": 3,
+      "available": true
+    },
+    {
+      "id": "luosifen",
+      "name": "Luosifen",
+      "category": "china",
+      "price": 32000,
+      "image": "",
+      "description": "Liuzhou uslubidagi guruch lapshasi, 280 g",
+      "spicy": 2,
+      "available": true
+    },
+    {
+      "id": "chongqing-noodles",
+      "name": "Chongqing achchiq lapsha",
+      "category": "china",
+      "price": 21000,
+      "image": "",
+      "description": "Sichuan qalampiri bilan achchiq lapsha, 110 g",
+      "spicy": 3,
+      "available": true
+    },
+    {
+      "id": "tomato-egg-noodles",
+      "name": "Pomidor-tuxumli lapsha",
+      "category": "china",
+      "price": 16000,
+      "image": "",
+      "description": "Yumshoq, achchiq bo'lmagan sho'rvali lapsha, 110 g",
+      "spicy": 0,
+      "available": false
+    }
+  ]
+}

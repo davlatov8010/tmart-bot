@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>T-MART — Ramyon do'koni</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo"><span class="logo-t">T-</span><span class="logo-mart">MART</span></div>
+    <div class="tagline">Koreya va Xitoy ramyonlari</div>
+  </header>
+
+  <!-- 1. Katalog -->
+  <main id="view-catalog" class="view">
+    <div class="search">
+      <input id="search" type="search" placeholder="🔍  Ramyon qidirish..." autocomplete="off">
+    </div>
+    <nav class="chips" id="chips">
+      <button class="chip active" data-cat="all">Hammasi</button>
+      <button class="chip" data-cat="korea">🇰🇷 Koreya</button>
+      <button class="chip" data-cat="china">🇨🇳 Xitoy</button>
+    </nav>
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="muted center hidden">Hech narsa topilmadi 🤷</p>
+  </main>
+
+  <!-- 2. Savatcha -->
+  <main id="view-cart" class="view hidden">
+    <h2>Savatcha</h2>
+    <div id="cart-list"></div>
+    <div id="cart-empty" class="muted center hidden">
+      <div class="big-emoji">🍜</div>
+      Savatcha hozircha bo'sh
+    </div>
+    <div id="cart-totals" class="totals"></div>
+  </main>
+
+  <!-- 3. Buyurtma formasi -->
+  <main id="view-checkout" class="view hidden">
+    <h2>Buyurtmani rasmiylashtirish</h2>
+    <form id="form" novalidate>
+      <label>Ismingiz
+        <input name="name" required maxlength="64" placeholder="Masalan: Aziz">
+      </label>
+      <label>Telefon raqam
+        <input name="phone" type="tel" required maxlength="20" placeholder="+998 90 123 45 67">
+      </label>
+      <div class="field-title">Qabul qilish turi</div>
+      <div class="segmented">
+        <label><input type="radio" name="delivery" value="delivery" checked><span>🚚 Yetkazib berish</span></label>
+        <label><input type="radio" name="delivery" value="pickup"><span>🏪 O'zim olib ketaman</span></label>
+      </div>
+      <label id="address-field">Manzil
+        <textarea name="address" rows="2" maxlength="300" placeholder="Shahar, ko'cha, uy, xonadon, mo'ljal"></textarea>
+      </label>
+      <p id="pickup-info" class="muted hidden"></p>
+      <label>Izoh (ixtiyoriy)
+        <textarea name="comment" rows="2" maxlength="300" placeholder="Masalan: soat 18:00 dan keyin"></textarea>
+      </label>
+    </form>
+    <div id="checkout-totals" class="totals"></div>
+    <p id="form-error" class="error hidden"></p>
+  </main>
+
+  <!-- Telegram'dan tashqarida (brauzerda test qilganda) ko'rinadigan tugma -->
+  <div id="bottom-bar" class="bottom-bar hidden">
+    <button id="back-btn" class="btn-secondary hidden">←</button>
+    <button id="main-btn" class="btn-primary"></button>
+  </div>
+
+  <div id="toast" class="toast hidden"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
